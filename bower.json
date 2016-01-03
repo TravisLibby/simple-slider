@@ -1,0 +1,27 @@
+{
+  "name": "Simple Slider",
+  "homepage": "https://github.com/TravisLibby/simple-slider",
+  "authors": [
+    "Travis <travis.libby@gmail.com>"
+  ],
+  "description": "A simple image slider",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "image",
+    "slider"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "font-awesome": "fontawesome#~4.5.0"
+  }
+}

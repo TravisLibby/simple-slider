@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#slider-wrapper {
+  margin: 100px auto 0 auto;
+  width: 400px;
+  height: 400px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#slider {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 1200px; /* The width of the images combined */
+  position: absolute;
+  left: 0;
+}
+
+#slider li {
+  float: left;
+}
+
+#slider img {
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.fa-chevron-left {
+  left: 20px;
+}
+
+.fa-chevron-right {
+  right: 20px;
+}
