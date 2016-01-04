@@ -15,7 +15,7 @@ $('#prev').on('click', function() {
 });
 
 $('#next').on('click', function() {
-  if (currLeftPos === maxLeftPos) {
+  if (!isAnimating() && currLeftPos === maxLeftPos) {
     $('#slider').animate({
       left: '+=800'
     }, speed, function() {
