@@ -1,6 +1,7 @@
 var speed = 250;
 var minLeftPos = 0;
 var currLeftPos = 0;
+var minLeftPos = 0;
 var maxLeftPos = -800;
 
 $('#prev').on('click', function() {
@@ -14,12 +15,18 @@ $('#prev').on('click', function() {
 });
 
 $('#next').on('click', function() {
+  if (currLeftPos === maxLeftPos) {
+    $('#slider').animate({
+      left: '+=800'
+    }, speed, function() {
+      currLeftPos = 0;
+    });
+  }
   if (!isAnimating() && currLeftPos !== maxLeftPos) {
     $('#slider').animate({
       left: '-=400'
     }, speed, function() {
       currLeftPos -= 400;
-      console.log(currLeftPos);
     });
   }
 });
